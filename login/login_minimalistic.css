@@ -6,17 +6,25 @@
 
 /*Hide "please login" text, margin is to prevent login form moving too far up*/
 #loginPage h1 {
-  display: none
-}
-#loginPage .padded-left.padded-right.padded-bottom-page {
-  margin-top: 8em
+  display: none;
+  margin-bottom: 1.5em; /* Add margin to separate login form from logo */
 }
 
-/*Hide "manual" and "forgot" buttons}*/
+/*Hide "manual" and "forgot" buttons*/
 #loginPage .raised.cancel.block.btnForgotPassword.emby-button {
-  display: none
+  display: none;
 }
+
+/*Center the login form on the page*/
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.35);
+  width: 24em;
+  border-radius: var(--rounding);
+}
+
+/*Set a background image for the login page*/
 #loginPage {
-  background: url(https://i.imgur.com/9vL4iNf.png) !important; 
-  background-size: cover !important;
+  background: url(https://i.imgur.com/9vL4iNf.png) no-repeat center center fixed; 
+  background-size: cover;
 }
