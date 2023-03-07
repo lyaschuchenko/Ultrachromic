@@ -1,32 +1,33 @@
+/* Set background color to transparent */
 .skinHeader-withBackground {
-    background-color: transparent;
+background-color: transparent;
 }
 
-/*Pages the have single unit height taskbar*/
-@media all and (min-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #musicRecommendedPage {
-    margin-top: 68px;
-    padding-top: 0px !important;
-    overflow-y: scroll;
-  }
+/* Set margin and padding for pages with single unit height taskbar */
+@media (min-width: 100em) {
+#indexPage,
+#moviesPage,
+#tvRecommendedPage,
+#musicRecommendedPage {
+margin-top: 68px;
+padding-top: 0;
+overflow-y: scroll;
+}
 }
 
-/*Pages the have two unit height taskbar*/
-@media all and (max-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #musicRecommendedPage {
-    margin-top: 130px;
-    padding-top: 0.5em !important;
-    overflow-y: scroll;
-  }
+/* Set margin and padding for pages with two unit height taskbar */
+@media (max-width: 100em) {
+#indexPage,
+#moviesPage,
+#tvRecommendedPage,
+#musicRecommendedPage {
+margin-top: 130px;
+padding-top: 0.5em;
+overflow-y: scroll;
+}
 }
 
+/* Set overflow for scrollable elements */
 .force-scroll {
-    overflow-y: auto;
-    overflow-x: auto;
+overflow: auto;
 }
