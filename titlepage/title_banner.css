@@ -1,17 +1,14 @@
 /*Alternate itempage*/
-
 .itemBackdrop {
-  height: 31vh !important;
-  display: inherit;
+  height: 31vh;
 }
 .detailLogo {
   display: none;
 }
-.layout-desktop .detailRibbon {
+.detailRibbon {
   margin-top: 0;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding: .5em 0;
 }
-.layout-desktop .detailImageContainer .card {
+.detailImageContainer .card {
   top: 18vh;
 }
