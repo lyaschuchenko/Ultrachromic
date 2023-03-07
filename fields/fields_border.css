@@ -1,63 +1,58 @@
-/*Tweak entry fields, checkmarks, thin borders dark highlight*/
-.emby-input,
-.emby-textarea {
-  padding: .4em .55em;
-}
-.emby-select {
-  padding: .35em 1.9em .35em .35em;
-}
-.selectArrow {
-    margin-top: 1.05em;
-}
-.checkboxOutline,
+/Tweak entry fields, checkmarks, thin borders dark highlight/
 .emby-input,
 .emby-textarea,
-.emby-select-withcolor {
-  background: rgba(0, 0, 0, 0.2); 
-  border: 0.01em solid rgba(255, 255, 255, 0.22);
-}
-.emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus {
-  background: rgba(0, 0 , 0, 0.4) !important; 
+.emby-select {
+padding: .4em .55em;
+background: rgba(0, 0, 0, 0.2);
+border: 0.01em solid rgba(255, 255, 255, 0.22);
 }
 
-.emby-textarea:focus,
-.emby-select-withcolor:focus,
-.emby-input:focus,
-.itemSelectionPanel {
-  border: 0.01em solid rgba(var(--selection), 0.8) !important;
+.emby-select {
+padding-right: 1.9em;
 }
+
+.selectArrow {
+margin-top: 1.05em;
+}
+
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select:focus {
+background: rgba(0, 0 , 0, 0.4) !important;
+border: 0.01em solid rgba(var(--selection), 0.8) !important;
+}
+
 .emby-checkbox:checked + span + .checkboxOutline {
-  background-color: rgba(0, 0 , 0, 0.4) !important; 
-  border: 0.01em solid rgba(var(--selection), 0.8) !important;
+background-color: rgba(0, 0 , 0, 0.4) !important;
+border: 0.01em solid rgba(var(--selection), 0.8) !important;
 }
 
-/*Theme the library scan progress bar*/
-progress {
-  background: rgba(0, 0, 0, 0.5) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-}
-progress::-webkit-progress-bar {
-  background: rgba(0, 0, 0, 0.5) !important;
-  border: 0px solid rgba(255, 255, 255, 0.22);
-}
-progress::-moz-progress-bar {
-  background-color: rgba(255,255,255,0.75);
-}
-progress::-webkit-progress-value {
-  background-color: rgba(255,255,255,0.75);
-}
-#divRunningTasks span {
-  color: rgba(255,255,255,0.75) !important;
-}
+/Theme the library scan progress bar/
+progress,
 .taskProgressOuter {
-  background: rgba(0, 0, 0, 0.5) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22);
+background: rgba(0, 0, 0, 0.5) !important;
+border: 1px solid rgba(255, 255, 255, 0.22);
 }
+
+progress::-webkit-progress-bar,
+.taskProgressOuter {
+border: 0px solid rgba(255, 255, 255, 0.22);
+}
+
+progress::-moz-progress-bar,
+progress::-webkit-progress-value,
 .taskProgressInner {
-  background: rgba(255,255,255,0.75) !important;
+background-color: rgba(255,255,255,0.75) !important;
 }
+
+#divRunningTasks span,
 #scheduledTasksPage span {
-  color: rgba(255,255,255,0.75) !important;
+color: rgba(255,255,255,0.75) !important;
+}
+
+.emby-input,
+.emby-textarea,
+.emby-select,
+.emby-checkbox + span + .checkboxOutline {
+transition: background 0.2s, border-color 0.2s;
 }
