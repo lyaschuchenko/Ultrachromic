@@ -1,16 +1,17 @@
-/*Alternate itempage*/
+/* Alternate itempage */
 
 .itemBackdrop {
-  height: 31vh !important;
+  height: 31vh;
   display: inherit;
 }
+
 .detailLogo {
   display: none;
 }
+
 .layout-desktop .detailRibbon {
-  margin-top: 0;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
 }
 
 .layout-desktop .detailImageContainer .card {
@@ -18,34 +19,28 @@
 }
 
 #itemDetailPage .detailLogo {
-    position: static;
-    margin-left: 32.5%;
-    display: block;
-    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    /*! filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75)); */
-    flex-shrink: 0;
-    background-position: 0 50%;
-    margin-top: -18vh;
-    margin-bottom: 2vh;
+  position: static;
+  margin: -18vh 0 2vh 32.5%;
+  display: block;
+  -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  flex-shrink: 0;
+  background-position: 0 50%;
 }
 
 .layout-mobile .detailLogo {
-    display: none !important;
+  display: none !important;
 }
 
-#itemDetailPage .itemName.infoText.parentNameLast {
-    display: none;
-}
-
+#itemDetailPage .itemName.infoText.parentNameLast,
 .hide+.detailPageWrapperContainer .itemName {
-    display: block !important;
+  display: none;
 }
 
 .itemName {
-    margin: .5em 0 !important;
+  margin: 0.5em 0 !important;
 }
 
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-    display: block;
+  display: block;
 }
-
