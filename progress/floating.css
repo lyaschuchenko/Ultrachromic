@@ -1,36 +1,29 @@
-
 /*New progress bar*/
-#indexPage .innerCardFooterClear,
-#itemDetailPage .innerCardFooterClear {
-    background-color: transparent !important;
-    box-shadow: none;
+.progressBar {
+  border-radius: var(--rounding);
+  height: 6px;
+  background: rgba(0,0,0,0.4);
+  margin: 0.5em 0.8em;
 }
-#indexPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground,
-#indexPage .itemProgressBar,
-#itemDetailPage .itemProgressBar {
-    border-radius: var(--rounding);
+
+.progressBarForeground {
+  background-color: rgba(var(--accent), 0.95) !important;
 }
-#indexPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground  {
-    background-color: rgba(var(--accent), 0.95) !important;
+
+#indexPage .progressBar,
+#itemDetailPage .progressBar {
+  box-shadow: none;
 }
-#indexPage .itemProgressBar,
-#itemDetailPage .itemProgressBar {
-    height: 6px;
-    background: rgba(0,0,0,0.4);
-    margin: .5em .8em;
-}
+
 /*Accommodate play button on mobile*/
 @media all and (max-width: 100em){
-  #indexPage .itemProgressBar,
-  #itemDetailPage .itemProgressBar {
+  .progressBar {
     margin-right: 3.2em;
   }
 }
+
 @supports (backdrop-filter: blur(15px)) {
-  #indexPage .itemProgressBar,
-  #itemDetailPage .itemProgressBar{
+  .progressBar {
     backdrop-filter: blur(4px);
     background: rgba(0, 0, 0, 0.35) !important;
   }
