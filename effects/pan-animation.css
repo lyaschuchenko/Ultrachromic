@@ -1,3 +1,7 @@
+:root {
+  --animation-duration: 630s;
+}
+
 @keyframes backgroundScroll {
   0% {
     background-position: 99% 1%;
