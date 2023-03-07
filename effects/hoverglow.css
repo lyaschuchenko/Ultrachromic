@@ -1,14 +1,26 @@
 :root {
-  --accent: 255, 0, 0; /* замість цього значення вкажіть свій вибір кольору */
+  --accent: 255, 0, 0; /* замінити на колір акцента */
 }
 
+/*Glow accent on hover*/
+.cardOverlayContainer,
+.dialog,
+.toast,
 .raised.homeLibraryButton,
-.cardOverlayContainer {
+.drawer-open {
   border: solid 1px rgba(var(--accent), 0);
 }
 
-.raised.homeLibraryButton:hover,
 .cardOverlayContainer:hover,
-.dialog,
-.toast {
-  box-shadow: 0 0 5px rgba(var(--accent),
+.raised.homeLibraryButton:hover,
+.drawer-open {
+  box-shadow: 0 0 5px rgba(var(--accent), 1);
+  border: solid 1px rgba(var(--accent), 0.6);
+}
+
+.raised.homeLibraryButton,
+.drawer-open {
+  box-shadow: 0 0 5px rgba(var(--accent), 0);
+  border-right: solid 1px rgba(var(--accent), 1);
+}
+
