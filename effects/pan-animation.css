@@ -1,6 +1,7 @@
 @keyframes backgroundScroll {
   0% {
-    background-position: 99% 1%; opacity: 0;
+    background-position: 99% 1%;
+    opacity: 0;
   }
   2% {
     opacity: 1;
@@ -22,10 +23,10 @@
   }
 }
 
-
 @keyframes backgroundScrollmob {
   0% {
-    background-position: 99% 1%; opacity: 0;
+    background-position: 99% 1%;
+    opacity: 0;
   }
   12% {
     opacity: 1;
@@ -34,26 +35,25 @@
     opacity: 1;
   }
   100% {
-    background-position: 50% 50%; opacity: 0;
+    background-position: 50% 50%;
+    opacity: 0;
   }
 }
 
-
-
-@media all and (min-width: 100em){
+@media all and (min-width: 100em) {
   .backdropImage {
     background-size: 150% 150%;
     background-position: 99% 1%;
-    animation: backgroundScroll 630s ease;
+    animation: backgroundScroll var(--animation-duration) ease;
     animation-iteration-count: infinite;
   }
 }
 
-@media all and (max-width: 100em){
+@media all and (max-width: 100em) {
   .backdropImage {
-    /*background-size: 150% 150%;*/
     background-position: 99% 1%;
     animation: backgroundScrollmob 25s ease;
     animation-iteration-count: infinite;
+    opacity: 1;
   }
 }
